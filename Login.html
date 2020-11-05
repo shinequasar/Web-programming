@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>로그인 페이지</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(images/skybackground.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    input[type=text], input[type=password], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 10px;
+    }
+ 
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    input[type=submit],button {
+        background-color: lightskyblue;
+        color: white;
+        width: 500px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px;
+    }
+
+    input[type=submit]:hover,button:hover  {
+        background-color: cornflowerblue;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #h11{
+        position: absolute;
+        top: 1px;
+        left: 20px;
+        color: lightskyblue;
+        }
+    #h12{
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        color: lightskyblue;
+        }
+    h1{ 
+        text-align: center;
+        }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .font,button {
+            font-size: 20px;
+            font-family: 'Gugi', cursive;
+     }
+    </style>
+
+    </head>
+
+    <body>
+        <h1 id="h11">JUNG JU YEON</h1>
+        <h1 id="h12">STUDIO</h1>
+        <br><br><br><br>
+        <h1>LOGIN</h1>
+        <img src="icon/profile.png" width="100" id="center">
+        <br><br><br>
+
+        <div class="container">
+
+          <form action="login.php" method="post">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname" class="font">이메일</label>
+              </div>
+
+              <div class="col-75">
+                <input type="text" name="email" placeholder="User email.." required>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lname" class="font">비밀번호</label>
+            </div>
+
+              <div class="col-75">
+                <input type="password" name="pwd" placeholder="Password.." required>
+              </div><br><br><br><br>
+                
+                <div class= "row">
+                <input type="submit" value="로그인하기" class="font">
+                </div>
+              </div>
+            </form>  
+            
+                <div class= "row"><button type="button" onclick="location.href='SignIn.html' "style="text-decoration:none">회원가입하기</button>
+                </div>
+
+        </div><br><br><br><br>
+    </body>
+</html>

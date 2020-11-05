@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>회원가입 페이지</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(images/skybackground.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    input[type=text], input[type=password], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 10px;
+    }
+ 
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        background-color: lightskyblue;
+        color: white;
+        width: 500px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px;
+    }
+
+    input[type=submit]:hover {
+        background-color: cornflowerblue;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #h11{
+        position: absolute;
+        top: 1px;
+        left: 20px;
+        color: lightskyblue;
+        }
+    #h12{
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        color: lightskyblue;
+        }
+    h1{ 
+        text-align: center;
+        }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .font{
+            font-size: 20px;
+            font-family: 'Gugi', cursive;
+     }
+    #agree{
+            width: 180px;
+            padding: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            display: block;
+            margin-left: auto;
+            background-color: dimgray;
+            color: white;
+        }
+    #agree:hover {
+        background-color: cornflowerblue;
+    }
+    </style>
+
+    </head>
+
+    <body>
+        <h1 id="h11">JUNG JU YEON</h1>
+        <h1 id="h12">STUDIO</h1>
+        <br><br><br><br>
+        <h1>회원가입</h1>
+        <img src="icon/profile.png" width="100" id="center">
+        <br><br>
+
+        <div class="container">
+
+          <form action="signin.php" method="post">
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname" class="font">이름</label>
+              </div>
+              <div class="col-75">
+                <input type="text" name="name" placeholder="User name.." required>
+              </div>
+            </div>
+              <div class="row">
+              <div class="col-25">
+                <label for="fname" class="font">연락처</label>
+              </div>
+              <div class="col-75">
+                <input type="text" name="tel" placeholder="number.." required>
+              </div>
+            </div>
+              <div class="row">
+              <div class="col-25">
+                <label for="fname" class="font">이메일</label>
+              </div>
+              <div class="col-75">
+                <input type="text" name="email" placeholder="e-mail.." required>
+              </div>
+            </div>
+              <div class="row">
+              <div class="col-25">
+                <label for="fname" class="font">비밀번호 설정</label>
+              </div>
+              <div class="col-75">
+                <input type="text" name="pwd" placeholder="password.." required>
+              </div>
+            </div>
+              <div class="row">
+              <div class="col-25">
+                <label for="fname" class="font">개인정보처리 동의</label>
+              </div>
+              <div class="col-75"><br>
+                동의합니다. <input type="checkbox" name="agree" required>
+                  <a href="%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8.txt" download style="text-decoration:none"> <input type="button" value="개인정보처리방침 다운" name="agree" id="agree" value="1" required></a>
+              </div>
+            </div>
+
+              <br><br>
+              <div class= "row">
+                <input type="submit" value="회원가입하기" class="font">
+                </div>
+            </form>
+            
+        </div><br><br><br><br><br>
+    </body>
+</html>
